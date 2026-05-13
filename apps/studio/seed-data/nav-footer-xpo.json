@@ -1,0 +1,111 @@
+{
+  "primary_nav": [
+    {
+      "label": "Home",
+      "href": "https://www.xponential.com"
+    },
+    {
+      "label": "Our Brands",
+      "href": "https://www.xponential.com/our-brands"
+    },
+    {
+      "label": "Experiences",
+      "href": "",
+      "children": [
+        {
+          "label": "In-Studio",
+          "href": "https://www.xponential.com/in-studio"
+        },
+        {
+          "label": "Xponential+",
+          "href": "https://www.xponential.com/plus"
+        },
+        {
+          "label": "Corporate Wellness",
+          "href": "https://www.xponential.com/corporate-wellness"
+        }
+      ]
+    },
+    {
+      "label": "Franchising",
+      "href": "https://www.xponential.com/franchising"
+    },
+    {
+      "label": "Investor",
+      "href": "https://investor.xponential.com/"
+    },
+    {
+      "label": "Newsroom",
+      "href": "",
+      "children": [
+        {
+          "label": "News",
+          "href": "https://blog.xponential.com/newsroom"
+        },
+        {
+          "label": "Media Kit",
+          "href": "https://www.xponential.com/newsroom-media-kit"
+        },
+        {
+          "label": "Brand Guidelines",
+          "href": "https://www.xponential.com/newsroom-brand-guidelines"
+        },
+        {
+          "label": "Company Information",
+          "href": "https://www.xponential.com/newsroom-company-info"
+        }
+      ]
+    },
+    {
+      "label": "About",
+      "href": "https://www.xponential.com/about-us"
+    }
+  ],
+  "utility_nav": [],
+  "footer": {
+    "columns": [],
+    "legal": [
+      {
+        "label": "Terms of Use",
+        "href": "https://www.xponential.com/terms-of-use"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "https://www.xponential.com/privacy-policy"
+      },
+      {
+        "label": "California Collection Notice",
+        "href": "https://www.xponential.com/privacy-policy#california"
+      },
+      {
+        "label": "Consumer Health Data Privacy Policy",
+        "href": "https://www.xponential.com/privacy-policy#:~:text=updated%E2%80%9D%20date%2C%20above.-,Consumer%20Health%20Data%20Privacy%20Policy,-Effective%20Date%3A%20May"
+      },
+      {
+        "label": "Your Privacy Choices",
+        "href": "https://www.xponential.com/privacy_choices?data_request_is_for_which_brand_=Xponential"
+      }
+    ],
+    "social": [
+      {
+        "platform": "facebook",
+        "href": "https://www.facebook.com/xponentialfitness"
+      },
+      {
+        "platform": "linkedin",
+        "href": "https://www.linkedin.com/company/xponential-fitness/"
+      },
+      {
+        "platform": "instagram",
+        "href": "https://www.instagram.com/xponentialfitness/"
+      },
+      {
+        "platform": "youtube",
+        "href": "https://www.youtube.com/channel/UCOGZ2ZXmRY81WWiW-tbzDsQ"
+      }
+    ]
+  },
+  "slug": "xpo",
+  "url": "https://www.xponential.com/",
+  "captured_at": "2026-05-13T19:18:45.855037Z"
+}
