@@ -1,0 +1,127 @@
+{
+  "primary_nav": [
+    {
+      "label": "Class Formats",
+      "href": "https://www.purebarre.com/class-formats"
+    },
+    {
+      "label": "New to Barre",
+      "href": "https://www.purebarre.com/new-to-barre"
+    },
+    {
+      "label": "Studios",
+      "href": "https://www.purebarre.com/location-search"
+    },
+    {
+      "label": "ClassPoints\u2122",
+      "href": "https://www.purebarre.com/classpoints"
+    },
+    {
+      "label": "On Demand",
+      "href": "https://www.xponential.plus/"
+    },
+    {
+      "label": "Franchise",
+      "href": "https://www.purebarre.com/franchise"
+    }
+  ],
+  "utility_nav": [
+    {
+      "label": "find a location near you",
+      "href": "https://www.purebarre.com/location-search"
+    },
+    {
+      "label": "sign in",
+      "href": "https://members.purebarre.com/auth/login"
+    }
+  ],
+  "footer": {
+    "columns": [
+      {
+        "heading": null,
+        "links": [
+          {
+            "label": "About",
+            "href": "https://www.purebarre.com/about"
+          },
+          {
+            "label": "Franchise",
+            "href": "https://www.purebarre.com/franchise"
+          },
+          {
+            "label": "International",
+            "href": "https://www.purebarre.com/international"
+          },
+          {
+            "label": "Careers",
+            "href": "https://www.purebarre.com/careers"
+          }
+        ]
+      },
+      {
+        "heading": null,
+        "links": [
+          {
+            "label": "Gift Cards",
+            "href": "https://purebarre.securetree.com/"
+          },
+          {
+            "label": "Blog",
+            "href": "https://blog.purebarre.com/"
+          },
+          {
+            "label": "Press",
+            "href": "https://www.purebarre.com/press"
+          }
+        ]
+      },
+      {
+        "heading": null,
+        "links": [
+          {
+            "label": "Pure Barre On Demand",
+            "href": "https://www.xponential.plus/purebarre"
+          },
+          {
+            "label": "Pure Barre on Apple Watch",
+            "href": "https://www.purebarre.com/apple-watch-app"
+          },
+          {
+            "label": "ClassPoints",
+            "href": "https://www.classpoints.com/?brand=pure-barre"
+          }
+        ]
+      }
+    ],
+    "legal": [],
+    "social": [
+      {
+        "platform": "instagram",
+        "href": "https://www.instagram.com/pure_barre"
+      },
+      {
+        "platform": "facebook",
+        "href": "https://www.facebook.com/purebarre"
+      },
+      {
+        "platform": "twitter",
+        "href": "https://twitter.com/pure_barre"
+      },
+      {
+        "platform": "linkedin",
+        "href": "https://www.linkedin.com/company/pure-barre/"
+      },
+      {
+        "platform": "youtube",
+        "href": "https://www.youtube.com/user/PureBarreCompany"
+      },
+      {
+        "platform": "tiktok",
+        "href": "https://www.tiktok.com/@pure_barre?lang=en"
+      }
+    ]
+  },
+  "slug": "pb",
+  "url": "https://www.purebarre.com/",
+  "captured_at": "2026-05-13T19:18:53.137330Z"
+}
