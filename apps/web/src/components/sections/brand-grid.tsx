@@ -7,13 +7,21 @@ type BrandGridProps = PagebuilderType<"brandGrid">;
 type BrandCard = NonNullable<BrandGridProps["brands"]>[number];
 
 const HERO_IMG_QS = "?w=900&auto=format&q=80&fit=max" as const;
-const LOGO_IMG_QS = "?h=160&auto=format&fit=max" as const;
+const ALLOWED_LOGO_MIME_TYPES = new Set([
+  "image/svg+xml",
+  "image/png",
+]);
 
 function BrandCardItem({ brand }: { brand: BrandCard }) {
   const { name, heroImage, cardLogo, siteSlug } = brand;
   const linkable =
     typeof siteSlug === "string" && isSubBrandSiteSlug(siteSlug);
   const href = linkable ? `/${siteSlug}` : null;
+
+  const logoUrl = cardLogo?.url ?? null;
+  const logoMimeType = cardLogo?.mimeType ?? null;
+  const logoOk =
+    !!logoUrl && !!logoMimeType && ALLOWED_LOGO_MIME_TYPES.has(logoMimeType);
 
   const card = (
     <article className="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-neutral-900">
@@ -28,17 +36,19 @@ function BrandCardItem({ brand }: { brand: BrandCard }) {
         />
       ) : null}
       <div className="absolute inset-x-0 bottom-0 flex h-1/3 items-end justify-center bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6">
-        {cardLogo?.url ? (
-          // biome-ignore lint/performance/noImgElement: native lazy loading by design — bypasses sanity-image LQIP and next/image optimizer per product spec
+        {logoOk && logoUrl ? (
+          // biome-ignore lint/performance/noImgElement: native lazy loading by design — file-asset URL served directly without image-pipeline transforms
           <img
-            alt={cardLogo.alt || `${name} logo`}
+            alt={cardLogo?.alt || `${name} logo`}
             className="h-8 w-auto max-w-[70%] object-contain md:h-10"
             decoding="async"
             loading="lazy"
-            src={`${cardLogo.url}${LOGO_IMG_QS}`}
+            src={logoUrl}
           />
         ) : (
-          <span className="font-semibold text-white text-xl">{name}</span>
+          <span className="text-balance text-center font-bold text-white text-xl tracking-tight md:text-2xl">
+            {name}
+          </span>
         )}
       </div>
     </article>

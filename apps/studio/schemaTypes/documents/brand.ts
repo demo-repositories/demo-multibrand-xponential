@@ -52,10 +52,21 @@ export const brand = defineType({
         "Wide hero image used on the brand card. Pull canonical (largest) version.",
       group: GROUP.MAIN_CONTENT,
     }),
-    imageWithAltField({
+    defineField({
       name: "cardLogo",
-      title: "Card logo (SVG preferred)",
-      description: "Logo shown on the brand card grid",
+      type: "file",
+      title: "Card logo",
+      description:
+        "Brand logo for the brand card. SVG preferred (transparent vector); transparent PNG accepted.",
+      options: { accept: "image/svg+xml,image/png" },
+      fields: [
+        defineField({
+          name: "alt",
+          type: "string",
+          title: "Alt text",
+          description: "Plain text used by screen readers, e.g. 'Pure Barre'",
+        }),
+      ],
       group: GROUP.MAIN_CONTENT,
     }),
     imageWithAltField({

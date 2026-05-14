@@ -55,7 +55,7 @@ export const brandRefFragment = /* groq */ `
   orderRank,
   colorPalette,
   "siteSlug": *[_type == "site" && brand._ref == ^._id][0].slug.current,
-  "cardLogo": cardLogo { ${imageWithAlt} },
+  "cardLogo": cardLogo { "url": asset->url, "mimeType": asset->mimeType, alt },
   "modalLogo": modalLogo { ${imageWithAlt} },
   "heroImage": heroImage { ${imageWithAlt} }
 `;
