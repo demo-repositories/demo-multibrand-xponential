@@ -28,6 +28,48 @@ type SeoImageRenderProps = {
 
 type ContentProps = Record<string, string>;
 
+/** Generic OG queries can return Portable Text blocks for some `_type`s; renderer needs a plain string. */
+type OgDescriptionField = Maybe<string | readonly OgBlock[]>;
+type OgBlock = {
+  readonly _type?: string;
+  readonly children?: readonly OgSpan[];
+};
+type OgSpan = { readonly text?: string };
+
+function plainOgDescription(description: OgDescriptionField): Maybe<string> {
+  if (description == null || description === "") {
+    return;
+  }
+  if (typeof description === "string") {
+    return description;
+  }
+  if (!Array.isArray(description)) {
+    return;
+  }
+  const chunks: string[] = [];
+  for (const block of description) {
+    if (typeof block !== "object" || block === null) {
+      continue;
+    }
+    const children = block.children;
+    if (!Array.isArray(children)) {
+      continue;
+    }
+    for (const child of children) {
+      if (
+        typeof child === "object" &&
+        child !== null &&
+        typeof child.text === "string" &&
+        child.text.length > 0
+      ) {
+        chunks.push(child.text);
+      }
+    }
+  }
+  const joined = chunks.join(" ").trim();
+  return joined.length > 0 ? joined : undefined;
+}
+
 type DominantColorSeoImageRenderProps = {
   image?: Maybe<string>;
   title?: Maybe<string>;
@@ -35,7 +77,7 @@ type DominantColorSeoImageRenderProps = {
   dominantColor?: Maybe<string>;
   date?: Maybe<string>;
   _type?: Maybe<string>;
-  description?: Maybe<string>;
+  description?: OgDescriptionField;
 };
 
 const seoImageRender = ({ seoImage }: SeoImageRenderProps) => (
@@ -73,7 +115,9 @@ const dominantColorSeoImageRender = ({
   date,
   description,
   _type,
-}: DominantColorSeoImageRenderProps) => (
+}: DominantColorSeoImageRenderProps) => {
+  const descriptionPlain = plainOgDescription(description);
+  return (
   <div
     style={{ fontFamily: "Inter" }}
     tw={`bg-[${
@@ -110,7 +154,9 @@ const dominantColorSeoImageRender = ({
       <h1 tw="text-5xl font-bold leading-tight max-w-[90%] text-white">
         {title}
       </h1>
-      {description && <p tw="text-lg text-white">{description}</p>}
+      {descriptionPlain && (
+        <p tw="text-lg text-white">{descriptionPlain}</p>
+      )}
       {_type && (
         <div
           tw={`bg-white text-[${
@@ -143,7 +189,8 @@ const dominantColorSeoImageRender = ({
       </div>
     </div>
   </div>
-);
+  );
+};
 
 const FONT_REGEX = /url\(([^)]+)\)/;
 

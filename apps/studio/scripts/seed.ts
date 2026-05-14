@@ -239,7 +239,11 @@ if (mode === "ndjson") {
   });
   (async () => {
     const tx = client.transaction();
-    for (const doc of allDocs) tx.createOrReplace(doc);
+    for (const doc of allDocs)
+      tx.createOrReplace(
+        // @sanity/client mutation stubs one document shape per call site; scripts push many _types.
+        doc as never,
+      );
     const result = await tx.commit();
     console.log(`✔ Pushed ${allDocs.length} docs. Transaction: ${result.transactionId}`);
   })();

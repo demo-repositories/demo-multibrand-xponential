@@ -342,7 +342,11 @@ const pages = [
 
 async function main() {
   const tx = client.transaction();
-  for (const p of pages) tx.createOrReplace(p);
+  for (const p of pages)
+    tx.createOrReplace(
+      // @sanity/client mutation generics expect a single pageBuilder variant; literals are heterogeneous.
+      p as never,
+    );
   const result = await tx.commit();
   console.log(`✔ Created/updated ${pages.length} page docs. Tx: ${result.transactionId}`);
   for (const p of pages) console.log(`  ${p._id}: ${p.pageBuilder.length} blocks`);
