@@ -1,64 +1,58 @@
-import { Badge } from "@workspace/ui/components/badge";
 import Link from "next/link";
 
+import { isSubBrandSiteSlug } from "@/lib/site";
 import type { PagebuilderType } from "@/types";
-import { SanityImage } from "../elements/sanity-image";
 
 type BrandGridProps = PagebuilderType<"brandGrid">;
-
 type BrandCard = NonNullable<BrandGridProps["brands"]>[number];
 
+const HERO_IMG_QS = "?w=900&auto=format&q=80&fit=max" as const;
+const LOGO_IMG_QS = "?h=160&auto=format&fit=max" as const;
+
 function BrandCardItem({ brand }: { brand: BrandCard }) {
-  const { name, tagline, externalUrl, cardLogo, slug } = brand;
-  const content = (
-    <div className="grid h-full grid-rows-[auto_auto_1fr_auto] gap-3 rounded-3xl bg-muted p-6 transition-colors hover:bg-muted/80 md:p-8">
-      <div className="flex h-16 items-center">
-        {cardLogo?.id ? (
-          <SanityImage
-            className="h-12 w-auto object-contain"
-            height={48}
-            image={cardLogo}
-            width={160}
+  const { name, heroImage, cardLogo, siteSlug } = brand;
+  const linkable =
+    typeof siteSlug === "string" && isSubBrandSiteSlug(siteSlug);
+  const href = linkable ? `/${siteSlug}` : null;
+
+  const card = (
+    <article className="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-neutral-900">
+      {heroImage?.url ? (
+        // biome-ignore lint/performance/noImgElement: native lazy loading by design — bypasses sanity-image LQIP and next/image optimizer per product spec
+        <img
+          alt={heroImage.alt || name || ""}
+          className="absolute inset-0 size-full object-cover transition-transform duration-300 group-hover:scale-105"
+          decoding="async"
+          loading="lazy"
+          src={`${heroImage.url}${HERO_IMG_QS}`}
+        />
+      ) : null}
+      <div className="absolute inset-x-0 bottom-0 flex h-1/3 items-end justify-center bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6">
+        {cardLogo?.url ? (
+          // biome-ignore lint/performance/noImgElement: native lazy loading by design — bypasses sanity-image LQIP and next/image optimizer per product spec
+          <img
+            alt={cardLogo.alt || `${name} logo`}
+            className="h-8 w-auto max-w-[70%] object-contain md:h-10"
+            decoding="async"
+            loading="lazy"
+            src={`${cardLogo.url}${LOGO_IMG_QS}`}
           />
         ) : (
-          <span className="font-semibold text-xl">{name}</span>
+          <span className="font-semibold text-white text-xl">{name}</span>
         )}
       </div>
-      <h3 className="font-semibold text-lg md:text-xl">{name}</h3>
-      {tagline && (
-        <p className="text-muted-foreground text-sm md:text-base">{tagline}</p>
-      )}
-      {externalUrl && (
-        <span className="font-medium text-sm underline decoration-dotted underline-offset-4">
-          Learn more
-        </span>
-      )}
-    </div>
+    </article>
   );
 
-  if (externalUrl) {
+  if (href) {
     return (
-      <Link
-        aria-label={`Visit ${name}`}
-        className="block h-full"
-        href={externalUrl}
-        rel="noopener"
-        target="_blank"
-      >
-        {content}
+      <Link aria-label={`Visit ${name} site`} className="block" href={href}>
+        {card}
       </Link>
     );
   }
 
-  if (slug) {
-    return (
-      <Link aria-label={`Visit ${name}`} className="block h-full" href={slug}>
-        {content}
-      </Link>
-    );
-  }
-
-  return content;
+  return card;
 }
 
 export function BrandGrid({ title, eyebrow, brands }: BrandGridProps) {
@@ -69,15 +63,21 @@ export function BrandGrid({ title, eyebrow, brands }: BrandGridProps) {
   return (
     <section className="my-6 md:my-16" id="brand-grid">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mb-10 flex flex-col items-center space-y-4 text-center md:mb-16">
-          {eyebrow && <Badge variant="secondary">{eyebrow}</Badge>}
-          {title && (
-            <h2 className="text-balance font-semibold text-3xl md:text-5xl">
-              {title}
-            </h2>
-          )}
-        </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {(eyebrow || title) && (
+          <div className="mb-8 flex flex-col items-start gap-3 md:mb-12">
+            {eyebrow && (
+              <p className="font-medium text-muted-foreground text-sm uppercase tracking-wide">
+                {eyebrow}
+              </p>
+            )}
+            {title && (
+              <h2 className="text-balance font-bold text-3xl md:text-5xl">
+                {title}
+              </h2>
+            )}
+          </div>
+        )}
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {brands.map((brand) => (
             <BrandCardItem brand={brand} key={brand._id} />
           ))}

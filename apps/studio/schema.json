@@ -3030,23 +3030,6 @@
           },
           "optional": true
         },
-        "layout": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "union",
-            "of": [
-              {
-                "type": "string",
-                "value": "grid"
-              },
-              {
-                "type": "string",
-                "value": "carousel"
-              }
-            ]
-          },
-          "optional": true
-        },
         "brands": {
           "type": "objectAttribute",
           "value": {

@@ -54,6 +54,7 @@ export const brandRefFragment = /* groq */ `
   externalUrl,
   orderRank,
   colorPalette,
+  "siteSlug": *[_type == "site" && brand._ref == ^._id][0].slug.current,
   "cardLogo": cardLogo { ${imageWithAlt} },
   "modalLogo": modalLogo { ${imageWithAlt} },
   "heroImage": heroImage { ${imageWithAlt} }
@@ -128,7 +129,7 @@ export const pressItemRefFragment = /* groq */ `
 
 export const brandGridBlock = /* groq */ `
   _type == "brandGrid" => {
-    _key, _type, title, eyebrow, layout,
+    _key, _type, title, eyebrow,
     "brands": brands[]->{ ${brandRefFragment} }
   }
 `;
