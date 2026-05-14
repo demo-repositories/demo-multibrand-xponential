@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "home",
+    "url": "https://www.stretchlab.com/",
+    "ok": true,
+    "error": null,
+    "image_count": 51,
+    "body_chars": 18376,
+    "internal_links": 4,
+    "out": "/work/pages/sl/home.json"
+  },
+  {
+    "slug": "stretches",
+    "url": "https://www.stretchlab.com/stretches",
+    "ok": true,
+    "error": null,
+    "image_count": 14,
+    "body_chars": 3904,
+    "internal_links": 1,
+    "out": "/work/pages/sl/stretches.json"
+  },
+  {
+    "slug": "benefits",
+    "url": "https://www.stretchlab.com/benefits",
+    "ok": true,
+    "error": null,
+    "image_count": 0,
+    "body_chars": 2571,
+    "internal_links": 1,
+    "out": "/work/pages/sl/benefits.json"
+  },
+  {
+    "slug": "first-timers",
+    "url": "https://www.stretchlab.com/first-timers",
+    "ok": true,
+    "error": null,
+    "image_count": 15,
+    "body_chars": 14536,
+    "internal_links": 2,
+    "out": "/work/pages/sl/first-timers.json"
+  },
+  {
+    "slug": "normatec",
+    "url": "https://www.stretchlab.com/normatec",
+    "ok": true,
+    "error": null,
+    "image_count": 9,
+    "body_chars": 1514,
+    "internal_links": 1,
+    "out": "/work/pages/sl/normatec.json"
+  },
+  {
+    "slug": "flexologist-training-program",
+    "url": "https://www.stretchlab.com/flexologist-training-program",
+    "ok": true,
+    "error": null,
+    "image_count": 8,
+    "body_chars": 3196,
+    "internal_links": 2,
+    "out": "/work/pages/sl/flexologist-training-program.json"
+  },
+  {
+    "slug": "about",
+    "url": "https://www.stretchlab.com/about",
+    "ok": true,
+    "error": null,
+    "image_count": 10,
+    "body_chars": 5658,
+    "internal_links": 3,
+    "out": "/work/pages/sl/about.json"
+  },
+  {
+    "slug": "careers",
+    "url": "https://www.stretchlab.com/careers",
+    "ok": true,
+    "error": null,
+    "image_count": 4,
+    "body_chars": 4822,
+    "internal_links": 5,
+    "out": "/work/pages/sl/careers.json"
+  },
+  {
+    "slug": "press-releases",
+    "url": "https://www.stretchlab.com/press-releases",
+    "ok": true,
+    "error": null,
+    "image_count": 17,
+    "body_chars": 24207,
+    "internal_links": 0,
+    "out": "/work/pages/sl/press-releases.json"
+  },
+  {
+    "slug": "franchise",
+    "url": "https://www.stretchlab.com/franchise",
+    "ok": true,
+    "error": null,
+    "image_count": 67,
+    "body_chars": 8751,
+    "internal_links": 2,
+    "out": "/work/pages/sl/franchise.json"
+  }
+]

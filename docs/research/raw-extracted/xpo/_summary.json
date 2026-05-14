@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "corporate-wellness",
+    "url": "https://www.xponential.com/corporate-wellness",
+    "ok": true,
+    "title": "Xponential Fitness - Corporate Wellness Page",
+    "h1": "",
+    "body_chars": 11646,
+    "image_count": 12,
+    "internal_links": 2
+  },
+  {
+    "slug": "franchising",
+    "url": "https://www.xponential.com/franchising",
+    "ok": true,
+    "title": "Franchising | Xponential",
+    "h1": "",
+    "body_chars": 18543,
+    "image_count": 10,
+    "internal_links": 2
+  },
+  {
+    "slug": "home",
+    "url": "https://www.xponential.com/",
+    "ok": true,
+    "title": "Xponential Fitness | Join Our Franchise Family",
+    "h1": "",
+    "body_chars": 7379,
+    "image_count": 18,
+    "internal_links": 5
+  },
+  {
+    "slug": "in-studio",
+    "url": "https://www.xponential.com/in-studio",
+    "ok": true,
+    "title": "In Studio | Xponential",
+    "h1": "",
+    "body_chars": 2647,
+    "image_count": 4,
+    "internal_links": 2
+  },
+  {
+    "slug": "leadership-andrew-hagopian",
+    "url": "https://www.xponential.com/leadership/andrew-hagopian",
+    "ok": true,
+    "title": "Leadership | Andrew Hagopian",
+    "h1": "",
+    "body_chars": 1605,
+    "image_count": 1,
+    "internal_links": 1
+  },
+  {
+    "slug": "leadership-bob-kaufman",
+    "url": "https://www.xponential.com/leadership/bob-kaufman",
+    "ok": true,
+    "title": "Leadership | Bob Kaufman",
+    "h1": "",
+    "body_chars": 1376,
+    "image_count": 1,
+    "internal_links": 1
+  },
+  {
+    "slug": "leadership-gavin-oconnor",
+    "url": "https://www.xponential.com/leadership/gavin-oconnor",
+    "ok": true,
+    "title": "Leadership | Andrew Hagopian",
+    "h1": "",
+    "body_chars": 1029,
+    "image_count": 1,
+    "internal_links": 1
+  },
+  {
+    "slug": "leadership-mike-nuzzo",
+    "url": "https://www.xponential.com/leadership/mike-nuzzo",
+    "ok": true,
+    "title": "Leadership | Mike Nuzzo",
+    "h1": "",
+    "body_chars": 1485,
+    "image_count": 1,
+    "internal_links": 1
+  },
+  {
+    "slug": "our-brands",
+    "url": "https://www.xponential.com/our-brands",
+    "ok": true,
+    "title": "Brands | Xponential",
+    "h1": "",
+    "body_chars": 5404,
+    "image_count": 5,
+    "internal_links": 2
+  },
+  {
+    "slug": "plus",
+    "url": "https://www.xponential.com/plus",
+    "ok": true,
+    "title": "The Best Fitness Studio Workouts On Demand | Xponential+",
+    "h1": "The world's best boutique fitness classes \u2014 on demand.",
+    "body_chars": 21452,
+    "image_count": 74,
+    "internal_links": 0
+  }
+]

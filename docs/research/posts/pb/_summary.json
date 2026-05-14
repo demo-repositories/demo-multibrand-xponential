@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "what-is-barre",
+    "url": "https://blog.purebarre.com/what-is-barre",
+    "ok": true,
+    "error": null,
+    "image_count": 3,
+    "body_chars": 13579,
+    "internal_links": 9,
+    "out": "/work/pages/pb-posts/what-is-barre.json"
+  },
+  {
+    "slug": "how-to-prepare-for-first-barre-class",
+    "url": "https://blog.purebarre.com/how-to-prepare-for-first-barre-class",
+    "ok": true,
+    "error": null,
+    "image_count": 3,
+    "body_chars": 7162,
+    "internal_links": 7,
+    "out": "/work/pages/pb-posts/how-to-prepare-for-first-barre-class.json"
+  },
+  {
+    "slug": "strength-training-for-perimenopause-menopause",
+    "url": "https://blog.purebarre.com/strength-training-for-perimenopause-menopause",
+    "ok": true,
+    "error": null,
+    "image_count": 3,
+    "body_chars": 20458,
+    "internal_links": 9,
+    "out": "/work/pages/pb-posts/strength-training-for-perimenopause-menopause.json"
+  },
+  {
+    "slug": "benefits-barre-longevity",
+    "url": "https://blog.purebarre.com/benefits-barre-longevity",
+    "ok": true,
+    "error": null,
+    "image_count": 3,
+    "body_chars": 9961,
+    "internal_links": 7,
+    "out": "/work/pages/pb-posts/benefits-barre-longevity.json"
+  },
+  {
+    "slug": "four-class-formats",
+    "url": "https://blog.purebarre.com/four-class-formats",
+    "ok": true,
+    "error": null,
+    "image_count": 3,
+    "body_chars": 7690,
+    "internal_links": 4,
+    "out": "/work/pages/pb-posts/four-class-formats.json"
+  }
+]

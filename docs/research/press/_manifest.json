@@ -1,0 +1,11 @@
+[
+  {"slug": "bilt-partnership-renewal", "url": "https://blog.xponential.com/newsroom/xponential-bilt-partnership-renewal", "featuredOn": ["xpo", "pb", "sl"], "category": "cross-site"},
+  {"slug": "mexico-japan-expansion", "url": "https://blog.xponential.com/newsroom/xponential-fitness-brands-expand-to-mexico-and-japan", "featuredOn": ["xpo", "pb", "sl"], "category": "cross-site"},
+  {"slug": "japan-pure-barre-yogasix", "url": "https://blog.xponential.com/newsroom/xponential-fitness-fuels-japan-expansion-with-master-franchise-agreement-for-pure-barre-and-yogasix", "featuredOn": ["xpo", "pb"], "category": "cross-site"},
+  {"slug": "pb-platinum-barre-challenge", "url": "https://blog.xponential.com/newsroom/pure-barre-launches-platinum-barre-first-10-challenge", "featuredOn": ["pb"], "category": "pb-only"},
+  {"slug": "pb-sarah-luna-president", "url": "https://blog.xponential.com/newsroom/xponential-fitness-taps-pure-barres-sarah-luna-as-president", "featuredOn": ["pb", "xpo"], "category": "pb-only"},
+  {"slug": "pb-heart-health-month", "url": "https://blog.xponential.com/newsroom/pulse-with-pure-barre-in-celebration-of-heart-health-month", "featuredOn": ["pb"], "category": "pb-only"},
+  {"slug": "sl-canada-debut", "url": "https://blog.xponential.com/newsroom/stretchlab-to-debut-in-canada-marking-first-international-studio", "featuredOn": ["sl"], "category": "sl-only"},
+  {"slug": "sl-150th-studio", "url": "https://blog.xponential.com/newsroom/stretchlab-opens-150th-studio-and-reaches-500-signed-franchise-agreements", "featuredOn": ["sl"], "category": "sl-only"},
+  {"slug": "sl-400th-studio", "url": "https://blog.xponential.com/newsroom/multi-unit-operator-opens-400th-stretchlab-studio", "featuredOn": ["sl"], "category": "sl-only"}
+]

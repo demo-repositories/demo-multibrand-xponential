@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "easy-guide-on-stretching-for-beginners",
+    "url": "https://blog.stretchlab.com/easy-guide-on-stretching-for-beginners",
+    "ok": true,
+    "error": null,
+    "image_count": 22,
+    "body_chars": 6946,
+    "internal_links": 8,
+    "out": "/work/pages/sl-posts/easy-guide-on-stretching-for-beginners.json"
+  },
+  {
+    "slug": "stretching-for-seniors",
+    "url": "https://blog.stretchlab.com/stretching-for-seniors",
+    "ok": true,
+    "error": null,
+    "image_count": 4,
+    "body_chars": 7950,
+    "internal_links": 7,
+    "out": "/work/pages/sl-posts/stretching-for-seniors.json"
+  },
+  {
+    "slug": "mobility-secret-every-golfer-needs-to-know",
+    "url": "https://blog.stretchlab.com/mobility-secret-every-golfer-needs-to-know",
+    "ok": true,
+    "error": null,
+    "image_count": 10,
+    "body_chars": 7706,
+    "internal_links": 11,
+    "out": "/work/pages/sl-posts/mobility-secret-every-golfer-needs-to-know.json"
+  },
+  {
+    "slug": "assisted-stretching-or-massage-which-is-better",
+    "url": "https://blog.stretchlab.com/assisted-stretching-or-massage-which-is-better",
+    "ok": true,
+    "error": null,
+    "image_count": 4,
+    "body_chars": 7197,
+    "internal_links": 7,
+    "out": "/work/pages/sl-posts/assisted-stretching-or-massage-which-is-better.json"
+  },
+  {
+    "slug": "stretchlab-now-offers-all-access-nationwide",
+    "url": "https://blog.stretchlab.com/stretchlab-now-offers-all-access-nationwide",
+    "ok": true,
+    "error": null,
+    "image_count": 4,
+    "body_chars": 5297,
+    "internal_links": 7,
+    "out": "/work/pages/sl-posts/stretchlab-now-offers-all-access-nationwide.json"
+  }
+]

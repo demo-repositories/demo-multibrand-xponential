@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "austin-domain-tx",
+    "ok": true,
+    "error": null,
+    "has_address": true,
+    "has_phone": true,
+    "has_hours": true,
+    "has_booking": true,
+    "has_maps": true,
+    "intro_offer": "",
+    "class_formats": [
+      "Pure Barre Classic",
+      "Pure Barre Align",
+      "Pure Barre Empower",
+      "Pure Barre Define"
+    ],
+    "staff_count": 0
+  },
+  {
+    "slug": "denver-cherry-creek-co",
+    "ok": true,
+    "error": null,
+    "has_address": true,
+    "has_phone": true,
+    "has_hours": true,
+    "has_booking": true,
+    "has_maps": true,
+    "intro_offer": "",
+    "class_formats": [
+      "Pure Barre Classic",
+      "Pure Barre Align",
+      "Pure Barre Empower",
+      "Pure Barre Define"
+    ],
+    "staff_count": 0
+  },
+  {
+    "slug": "san-diego-hillcrest-ca",
+    "ok": true,
+    "error": null,
+    "has_address": true,
+    "has_phone": true,
+    "has_hours": true,
+    "has_booking": true,
+    "has_maps": true,
+    "intro_offer": "",
+    "class_formats": [
+      "Pure Barre Classic",
+      "Pure Barre Align",
+      "Pure Barre Empower",
+      "Pure Barre Define"
+    ],
+    "staff_count": 3
+  },
+  {
+    "slug": "chicago-lincoln-park-il",
+    "ok": true,
+    "error": null,
+    "has_address": true,
+    "has_phone": true,
+    "has_hours": true,
+    "has_booking": true,
+    "has_maps": true,
+    "intro_offer": "",
+    "class_formats": [
+      "Pure Barre Classic",
+      "Pure Barre Align",
+      "Pure Barre Empower",
+      "Pure Barre Define"
+    ],
+    "staff_count": 0
+  },
+  {
+    "slug": "atlanta-buckhead-ga",
+    "ok": true,
+    "error": null,
+    "has_address": true,
+    "has_phone": true,
+    "has_hours": true,
+    "has_booking": true,
+    "has_maps": true,
+    "intro_offer": "",
+    "class_formats": [
+      "Pure Barre Classic",
+      "Pure Barre Align",
+      "Pure Barre Empower",
+      "Pure Barre Define"
+    ],
+    "staff_count": 0
+  }
+]

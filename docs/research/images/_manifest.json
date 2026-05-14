@@ -1,0 +1,340 @@
+[
+  {
+    "docType": "brand",
+    "slug": "pure-barre",
+    "file": "/research/images/brand/pure-barre-logo.png",
+    "source": "https://4194181.fs1.hubspotusercontent-na1.net/hubfs/4194181/Pure%20Barre%20Logo-1.png",
+    "altText": "pure-barre logo"
+  },
+  {
+    "docType": "brand",
+    "slug": "stretchlab",
+    "file": "/research/images/brand/stretchlab-logo.png",
+    "source": "https://www.stretchlab.com/hubfs/stretchlab.com/png/logo-full-color.png",
+    "altText": "stretchlab logo"
+  },
+  {
+    "docType": "brand",
+    "slug": "club-pilates",
+    "file": "/research/images/brand/club-pilates-logo.png",
+    "source": "https://www.clubpilates.com/hubfs/ClubPilates_LogoHorizontal_Blue.png",
+    "altText": "club-pilates logo"
+  },
+  {
+    "docType": "brand",
+    "slug": "yogasix",
+    "file": "/research/images/brand/yogasix-logo.jpg",
+    "source": "https://www.yogasix.com/hubfs/Y6_Logo_Primary_Color_CMYK-Jun-30-2021-05-35-43-87-PM.jpg",
+    "altText": "yogasix logo"
+  },
+  {
+    "docType": "brand",
+    "slug": "bft",
+    "file": "/research/images/brand/bft-logo.svg",
+    "source": "https://www.bodyfittraining.com/hubfs/media-assets/images/logo/bft-logo.svg",
+    "altText": "bft logo"
+  },
+  {
+    "docType": "site-logo",
+    "slug": "xpo",
+    "file": "/research/images/site/xpo-logo.png",
+    "source": "https://www.xponential.com/hubfs/XPO%202023%20logo-02%20(1)-1.png",
+    "altText": "xpo site logo"
+  },
+  {
+    "docType": "site-favicon",
+    "slug": "xpo",
+    "file": "/research/images/site/xpo-favicon.png",
+    "source": "https://www.xponential.com/hubfs/Xponential_September2019%20Theme/Images/Xponential_Favicon1.png",
+    "altText": "xpo favicon"
+  },
+  {
+    "docType": "site-logo",
+    "slug": "purebarre",
+    "file": "/research/images/site/purebarre-logo.png",
+    "source": "https://4194181.fs1.hubspotusercontent-na1.net/hubfs/4194181/Pure%20Barre%20Logo-1.png",
+    "altText": "purebarre site logo"
+  },
+  {
+    "docType": "site-favicon",
+    "slug": "purebarre",
+    "file": "/research/images/site/purebarre-favicon.png",
+    "source": "https://4194181.fs1.hubspotusercontent-na1.net/hubfs/4194181/PureBarre_Social_ProfilePhoto_Small%20(3).png",
+    "altText": "purebarre favicon"
+  },
+  {
+    "docType": "site-logo",
+    "slug": "stretchlab",
+    "file": "/research/images/site/stretchlab-logo.png",
+    "source": "https://www.stretchlab.com/hubfs/stretchlab.com/png/logo-full-color.png",
+    "altText": "stretchlab site logo"
+  },
+  {
+    "docType": "site-favicon",
+    "slug": "stretchlab",
+    "file": "/research/images/site/stretchlab-favicon.png",
+    "source": "https://www.stretchlab.com/hubfs/Stretch_Labs/favicon.png",
+    "altText": ""
+  },
+  {
+    "docType": "studio",
+    "slug": "atlanta-buckhead-ga",
+    "file": "/research/images/studio/atlanta-buckhead-ga.jpg",
+    "source": "https://4194181.fs1.hubspotusercontent-na1.net/hubfs/4194181/purebarre_featured.jpg",
+    "altText": "atlanta-buckhead-ga studio"
+  },
+  {
+    "docType": "studio",
+    "slug": "austin-domain-tx",
+    "file": "/research/images/studio/austin-domain-tx.jpg",
+    "source": "https://4194181.fs1.hubspotusercontent-na1.net/hubfs/4194181/purebarre_featured.jpg",
+    "altText": "austin-domain-tx studio"
+  },
+  {
+    "docType": "studio",
+    "slug": "chicago-lincoln-park-il",
+    "file": "/research/images/studio/chicago-lincoln-park-il.jpg",
+    "source": "https://4194181.fs1.hubspotusercontent-na1.net/hubfs/4194181/purebarre_featured.jpg",
+    "altText": "chicago-lincoln-park-il studio"
+  },
+  {
+    "docType": "studio",
+    "slug": "denver-cherry-creek-co",
+    "file": "/research/images/studio/denver-cherry-creek-co.jpg",
+    "source": "https://4194181.fs1.hubspotusercontent-na1.net/hubfs/4194181/purebarre_featured.jpg",
+    "altText": "denver-cherry-creek-co studio"
+  },
+  {
+    "docType": "studio",
+    "slug": "san-diego-hillcrest-ca",
+    "file": "/research/images/studio/san-diego-hillcrest-ca.jpg",
+    "source": "https://4194181.fs1.hubspotusercontent-na1.net/hubfs/4194181/purebarre_featured.jpg",
+    "altText": "san-diego-hillcrest-ca studio"
+  },
+  {
+    "docType": "studio",
+    "slug": "buckhead",
+    "file": "/research/images/studio/buckhead.jpg",
+    "source": "https://www.stretchlab.com/hubfs/stretchlab_featured.jpg",
+    "altText": "buckhead studio"
+  },
+  {
+    "docType": "studio",
+    "slug": "cherrycreek",
+    "file": "/research/images/studio/cherrycreek.jpg",
+    "source": "https://www.stretchlab.com/hubfs/stretchlab_featured.jpg",
+    "altText": "cherrycreek studio"
+  },
+  {
+    "docType": "studio",
+    "slug": "hillcrest",
+    "file": "/research/images/studio/hillcrest.jpg",
+    "source": "https://www.stretchlab.com/hubfs/stretchlab_featured.jpg",
+    "altText": "hillcrest studio"
+  },
+  {
+    "docType": "studio",
+    "slug": "southloop",
+    "file": "/research/images/studio/southloop.jpg",
+    "source": "https://www.stretchlab.com/hubfs/stretchlab_featured.jpg",
+    "altText": "southloop studio"
+  },
+  {
+    "docType": "studio",
+    "slug": "westlake",
+    "file": "/research/images/studio/westlake.jpg",
+    "source": "https://www.stretchlab.com/hubfs/stretchlab_featured.jpg",
+    "altText": "westlake studio"
+  },
+  {
+    "docType": "press",
+    "slug": "bilt-partnership-renewal",
+    "file": "/research/images/press/bilt-partnership-renewal.png",
+    "source": "https://blog.xponential.com/hubfs/Medium%20Xpo.com%20News%20(5)-1.png",
+    "altText": "Xponential Fitness Renews Partnership with Bilt Rewards"
+  },
+  {
+    "docType": "press",
+    "slug": "japan-pure-barre-yogasix",
+    "file": "/research/images/press/japan-pure-barre-yogasix.jpg",
+    "source": "https://blog.xponential.com/hubfs/news_image111.jpg",
+    "altText": "Xponential Fitness Fuels Japan Expansion with Master Franchise Agreement for Pure Barre and YogaSix"
+  },
+  {
+    "docType": "press",
+    "slug": "mexico-japan-expansion",
+    "file": "/research/images/press/mexico-japan-expansion.jpg",
+    "source": "https://blog.xponential.com/hubfs/purebarre.jpg",
+    "altText": "Xponential Fitness Brands Expand to Mexico and Japan"
+  },
+  {
+    "docType": "press",
+    "slug": "pb-heart-health-month",
+    "file": "/research/images/press/pb-heart-health-month.jpg",
+    "source": "https://blog.xponential.com/hubfs/Newsroom%20Assets/media-kit-photos/newsroom-images-for-download/Pure-Barre-02-full.jpg",
+    "altText": "Pulse With Pure Barre in Celebration of Heart Health Month"
+  },
+  {
+    "docType": "press",
+    "slug": "pb-platinum-barre-challenge",
+    "file": "/research/images/press/pb-platinum-barre-challenge.png",
+    "source": "https://blog.xponential.com/hubfs/Imported%20sitepage%20images/pure%20barre%20recruitment.png",
+    "altText": "Pure Barre Launches \u201cPlatinum Barre\u201d &amp; \u201cFirst 10\u201d Challenge"
+  },
+  {
+    "docType": "press",
+    "slug": "pb-sarah-luna-president",
+    "file": "/research/images/press/pb-sarah-luna-president.png",
+    "source": "https://blog.xponential.com/hubfs/Newsroom%20Assets/media-kit-photos/newsroom-preview-images/CB-04.png",
+    "altText": "Sarah Luna Named President of XPO"
+  },
+  {
+    "docType": "press",
+    "slug": "sl-150th-studio",
+    "file": "/research/images/press/sl-150th-studio.jpg",
+    "source": "https://blog.xponential.com/hubfs/Newsroom%20Assets/media-kit-photos/newsroom-images-for-download/Stretch-Lab-04-full.jpg",
+    "altText": "StretchLab Opens 150th Studio and Reaches 500 Signed Franchise Agreements"
+  },
+  {
+    "docType": "press",
+    "slug": "sl-400th-studio",
+    "file": "/research/images/press/sl-400th-studio.jpg",
+    "source": "https://blog.xponential.com/hubfs/sl_news_2.jpg",
+    "altText": "Multi-unit operator opens 400th StretchLab studio"
+  },
+  {
+    "docType": "press",
+    "slug": "sl-canada-debut",
+    "file": "/research/images/press/sl-canada-debut.png",
+    "source": "https://blog.xponential.com/hubfs/Newsroom%20Assets/media-kit-photos/newsroom-preview-images/stretch-lab-02.png",
+    "altText": "StretchLab to Debut in Canada, Marking First International Studio"
+  },
+  {
+    "docType": "classFormat",
+    "slug": "pure-barre-classic",
+    "file": "/research/images/classFormat/pure-barre-classic.jpg",
+    "source": "https://4194181.fs1.hubspotusercontent-na1.net/hubfs/4194181/purebarre_featured.jpg",
+    "altText": "The Best Full Body Workout"
+  },
+  {
+    "docType": "classFormat",
+    "slug": "pure-barre-define",
+    "file": "/research/images/classFormat/pure-barre-define.jpg",
+    "source": "https://4194181.fs1.hubspotusercontent-na1.net/hubfs/4194181/purebarre_featured.jpg",
+    "altText": "The Best Full Body Workout"
+  },
+  {
+    "docType": "classFormat",
+    "slug": "pure-barre-empower",
+    "file": "/research/images/classFormat/pure-barre-empower.jpg",
+    "source": "https://4194181.fs1.hubspotusercontent-na1.net/hubfs/4194181/purebarre_featured.jpg",
+    "altText": "The Best Full Body Workout"
+  },
+  {
+    "docType": "classFormat",
+    "slug": "pure-barre-align",
+    "file": "/research/images/classFormat/pure-barre-align.jpg",
+    "source": "https://4194181.fs1.hubspotusercontent-na1.net/hubfs/4194181/purebarre_featured.jpg",
+    "altText": "Pure Barre Align"
+  },
+  {
+    "docType": "blog",
+    "slug": "benefits-barre-longevity",
+    "file": "/research/images/blog/benefits-barre-longevity.jpg",
+    "source": "https://blog.purebarre.com/hubfs/BenefitsPureBarreLongevity_WomenTakingBarreClass.jpg",
+    "altText": "The Benefits of Pure Barre for Longevity"
+  },
+  {
+    "docType": "blog",
+    "slug": "four-class-formats",
+    "file": "/research/images/blog/four-class-formats.jpg",
+    "source": "https://blog.purebarre.com/hubfs/FINAL_S8A6700.jpg",
+    "altText": "All About our Four Class Formats"
+  },
+  {
+    "docType": "blog",
+    "slug": "how-to-prepare-for-first-barre-class",
+    "file": "/research/images/blog/how-to-prepare-for-first-barre-class.jpg",
+    "source": "https://blog.purebarre.com/hubfs/Pure%20Barre%20-%20Landing%20Page%202022/Image_2.jpg",
+    "altText": "How to Prepare for Your First Barre Class"
+  },
+  {
+    "docType": "blog",
+    "slug": "strength-training-for-perimenopause-menopause",
+    "file": "/research/images/blog/strength-training-for-perimenopause-menopause.png",
+    "source": "https://blog.purebarre.com/hubfs/PowerofPureBarreforMenopausePerimenopause.png",
+    "altText": "Strength Training for Perimenopause and Menopause"
+  },
+  {
+    "docType": "blog",
+    "slug": "what-is-barre",
+    "file": "/research/images/blog/what-is-barre.png",
+    "source": "https://blog.purebarre.com/hubfs/What_Is_Pure_Barre.png",
+    "altText": "What is Barre?"
+  },
+  {
+    "docType": "blog",
+    "slug": "assisted-stretching-or-massage-which-is-better",
+    "file": "/research/images/blog/assisted-stretching-or-massage-which-is-better.jpg",
+    "source": "https://blog.stretchlab.com/hubfs/image_3-1.jpg",
+    "altText": "Assisted Stretching or Massage? Which is better?"
+  },
+  {
+    "docType": "blog",
+    "slug": "easy-guide-on-stretching-for-beginners",
+    "file": "/research/images/blog/easy-guide-on-stretching-for-beginners.jpg",
+    "source": "https://blog.stretchlab.com/hubfs/IMG_20240311_134532_Bokeh.jpg",
+    "altText": "An Easy Guide on How to Start Stretching for Beginners"
+  },
+  {
+    "docType": "blog",
+    "slug": "mobility-secret-every-golfer-needs-to-know",
+    "file": "/research/images/blog/mobility-secret-every-golfer-needs-to-know.jpg",
+    "source": "https://blog.stretchlab.com/hubfs/913A9920.jpg",
+    "altText": "The Mobility Secret Every Golfer Needs to Know"
+  },
+  {
+    "docType": "blog",
+    "slug": "stretching-for-seniors",
+    "file": "/research/images/blog/stretching-for-seniors.jpg",
+    "source": "https://blog.stretchlab.com/hubfs/_TDW4949.jpg",
+    "altText": "Stretching For Seniors"
+  },
+  {
+    "docType": "blog",
+    "slug": "stretchlab-now-offers-all-access-nationwide",
+    "file": "/research/images/blog/stretchlab-now-offers-all-access-nationwide.jpg",
+    "source": "https://blog.stretchlab.com/hubfs/email-header-v1-1.jpg",
+    "altText": "StretchLab Now Offers Access to Hundreds of Studios Nationwide!"
+  },
+  {
+    "docType": "service",
+    "slug": "group-stretch",
+    "file": "/research/images/service/group-stretch.svg",
+    "source": "https://4644952.fs1.hubspotusercontent-na1.net/hubfs/4644952/Accessibility%20Allyant/Reviewed%20by%20Allyant%20for%20Accessibility%20Badge_White.svg",
+    "altText": "Group Stretch"
+  },
+  {
+    "docType": "service",
+    "slug": "one-on-one",
+    "file": "/research/images/service/one-on-one.svg",
+    "source": "https://4644952.fs1.hubspotusercontent-na1.net/hubfs/4644952/Accessibility%20Allyant/Reviewed%20by%20Allyant%20for%20Accessibility%20Badge_White.svg",
+    "altText": "One On One"
+  },
+  {
+    "docType": "author",
+    "slug": "pb-editorial",
+    "file": "/research/images/author/pb-editorial.png",
+    "source": "derived from brand:pure-barre",
+    "altText": "pb-editorial placeholder portrait",
+    "note": "placeholder: brand logo used as author image"
+  },
+  {
+    "docType": "author",
+    "slug": "sl-editorial",
+    "file": "/research/images/author/sl-editorial.png",
+    "source": "derived from brand:stretchlab",
+    "altText": "sl-editorial placeholder portrait",
+    "note": "placeholder: brand logo used as author image"
+  }
+]

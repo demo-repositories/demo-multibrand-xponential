@@ -1,0 +1,262 @@
+{
+  "slug": "xpo-our-brands",
+  "url": "https://www.xponential.com/our-brands",
+  "role": "showpiece_cross_site",
+  "captured_at": "2026-05-13T19:21:46.403739Z",
+  "asset_count": 23,
+  "assets": [
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/franchising/xponential-brands/bft.jpg",
+      "alt": "Woman doing a deadlift",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": "492",
+      "height": "400",
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/franchising/xponential-brands/clubpilates.jpg",
+      "alt": "Woman doing Pilates",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": "492",
+      "height": "400",
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/franchising/xponential-brands/logos/bft.svg",
+      "alt": "BFT Logo",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": "206",
+      "height": "41",
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/franchising/xponential-brands/logos/clubpilates.svg",
+      "alt": "Club Pilates Logo",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": "206",
+      "height": "41",
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/franchising/xponential-brands/logos/purebarre.svg",
+      "alt": "Pure Barre Logo",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": "206",
+      "height": "41",
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/franchising/xponential-brands/logos/stretchlab.svg",
+      "alt": "StretchLab Logo",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": "206",
+      "height": "41",
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/franchising/xponential-brands/logos/yogasix.svg",
+      "alt": "YogaSix Logo",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": "206",
+      "height": "41",
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/franchising/xponential-brands/purebarre.jpg",
+      "alt": "Woman doing Barre",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": "492",
+      "height": "400",
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/franchising/xponential-brands/stretchlab.jpg",
+      "alt": "Woman stretching",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": "492",
+      "height": "400",
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/franchising/xponential-brands/yogasix.jpg",
+      "alt": "Man doing Yoga",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": "492",
+      "height": "400",
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/logo/logo-xponential.svg",
+      "alt": "",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": null,
+      "height": null,
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/main-page/brands-logo/bft.svg",
+      "alt": "BFT Logo",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": null,
+      "height": null,
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/main-page/brands-logo/clubpilates.svg",
+      "alt": "Club Pilates Logo",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": null,
+      "height": null,
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/main-page/brands-logo/purebarre.svg",
+      "alt": "Pure Barre Logo",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": null,
+      "height": null,
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/main-page/brands-logo/stretchlab.svg",
+      "alt": "StretchLab Logo",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": null,
+      "height": null,
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/main-page/brands-logo/yogasix.svg",
+      "alt": "YogaSix Logo",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": null,
+      "height": null,
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/social%20logos/facebook.svg",
+      "alt": "facebook",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": null,
+      "height": null,
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/social%20logos/instagram.svg",
+      "alt": "instagram",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": null,
+      "height": null,
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/social%20logos/linkedin.svg",
+      "alt": "linkedin",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": null,
+      "height": null,
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/utility/close-modal.svg",
+      "alt": "close modal button",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": null,
+      "height": null,
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/cli-assets/images/utility/plus-circle.svg",
+      "alt": "open modal",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": null,
+      "height": null,
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/xpo-brands-hero-4.jpg",
+      "alt": "",
+      "type": "image",
+      "role": "background",
+      "mime": null,
+      "width": null,
+      "height": null,
+      "variant_count": 1,
+      "variants": []
+    },
+    {
+      "canonical_url": "https://www.xponential.com/hubfs/youtube.png",
+      "alt": "youtube",
+      "type": "image",
+      "role": null,
+      "mime": null,
+      "width": null,
+      "height": null,
+      "variant_count": 1,
+      "variants": []
+    }
+  ]
+}

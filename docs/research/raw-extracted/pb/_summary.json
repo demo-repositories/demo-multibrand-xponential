@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "home",
+    "url": "https://www.purebarre.com/",
+    "ok": true,
+    "error": null,
+    "image_count": 17,
+    "body_chars": 8491,
+    "internal_links": 4,
+    "out": "/work/pages/pb/home.json"
+  },
+  {
+    "slug": "class-formats",
+    "url": "https://www.purebarre.com/class-formats",
+    "ok": true,
+    "error": null,
+    "image_count": 3,
+    "body_chars": 2596,
+    "internal_links": 1,
+    "out": "/work/pages/pb/class-formats.json"
+  },
+  {
+    "slug": "pure-barre-classic",
+    "url": "https://www.purebarre.com/pure-barre",
+    "ok": true,
+    "error": null,
+    "image_count": 12,
+    "body_chars": 6153,
+    "internal_links": 3,
+    "out": "/work/pages/pb/pure-barre-classic.json"
+  },
+  {
+    "slug": "pure-empower",
+    "url": "https://www.purebarre.com/pure-empower",
+    "ok": true,
+    "error": null,
+    "image_count": 12,
+    "body_chars": 6155,
+    "internal_links": 3,
+    "out": "/work/pages/pb/pure-empower.json"
+  },
+  {
+    "slug": "pure-barre-define",
+    "url": "https://www.purebarre.com/pure-barre-define",
+    "ok": true,
+    "error": null,
+    "image_count": 12,
+    "body_chars": 6160,
+    "internal_links": 3,
+    "out": "/work/pages/pb/pure-barre-define.json"
+  },
+  {
+    "slug": "new-to-barre",
+    "url": "https://www.purebarre.com/new-to-barre",
+    "ok": true,
+    "error": null,
+    "image_count": 6,
+    "body_chars": 4953,
+    "internal_links": 4,
+    "out": "/work/pages/pb/new-to-barre.json"
+  },
+  {
+    "slug": "expectations",
+    "url": "https://www.purebarre.com/expectations",
+    "ok": true,
+    "error": null,
+    "image_count": 1,
+    "body_chars": 6137,
+    "internal_links": 5,
+    "out": "/work/pages/pb/expectations.json"
+  },
+  {
+    "slug": "about",
+    "url": "https://www.purebarre.com/about",
+    "ok": true,
+    "error": null,
+    "image_count": 6,
+    "body_chars": 3481,
+    "internal_links": 2,
+    "out": "/work/pages/pb/about.json"
+  },
+  {
+    "slug": "careers",
+    "url": "https://www.purebarre.com/careers",
+    "ok": true,
+    "error": null,
+    "image_count": 29,
+    "body_chars": 4358,
+    "internal_links": 1,
+    "out": "/work/pages/pb/careers.json"
+  },
+  {
+    "slug": "press",
+    "url": "https://www.purebarre.com/press",
+    "ok": true,
+    "error": null,
+    "image_count": 72,
+    "body_chars": 97582,
+    "internal_links": 5,
+    "out": "/work/pages/pb/press.json"
+  },
+  {
+    "slug": "franchise",
+    "url": "https://www.purebarre.com/franchise",
+    "ok": true,
+    "error": null,
+    "image_count": 21,
+    "body_chars": 7856,
+    "internal_links": 3,
+    "out": "/work/pages/pb/franchise.json"
+  },
+  {
+    "slug": "corporate-wellness",
+    "url": "https://www.purebarre.com/corporate-wellness",
+    "ok": true,
+    "error": null,
+    "image_count": 18,
+    "body_chars": 3027,
+    "internal_links": 2,
+    "out": "/work/pages/pb/corporate-wellness.json"
+  }
+]

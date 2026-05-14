@@ -1,0 +1,154 @@
+{
+  "primary_nav": [
+    {
+      "label": "About",
+      "href": "https://www.stretchlab.com/about"
+    },
+    {
+      "label": "Locations",
+      "href": "https://www.stretchlab.com/location-search"
+    },
+    {
+      "label": "Franchise",
+      "href": "https://www.stretchlab.com/franchise"
+    },
+    {
+      "label": "Gift Cards",
+      "href": "https://stretchlab.securetree.com/"
+    }
+  ],
+  "utility_nav": [
+    {
+      "label": "Find A Location Near You",
+      "href": "https://www.stretchlab.com/location-search"
+    },
+    {
+      "label": "Sign In",
+      "href": "https://members.stretchlab.com/auth/login"
+    }
+  ],
+  "footer": {
+    "columns": [
+      {
+        "heading": "Company",
+        "links": [
+          {
+            "label": "About",
+            "href": "https://www.stretchlab.com/about"
+          },
+          {
+            "label": "In the News",
+            "href": "https://www.stretchlab.com/press-releases"
+          },
+          {
+            "label": "Blog",
+            "href": "https://blog.stretchlab.com/"
+          },
+          {
+            "label": "International",
+            "href": "https://www.stretchlab.com/international"
+          }
+        ]
+      },
+      {
+        "heading": "Services",
+        "links": [
+          {
+            "label": "Benefits",
+            "href": "https://www.stretchlab.com/benefits"
+          },
+          {
+            "label": "Stretches",
+            "href": "https://www.stretchlab.com/stretches"
+          },
+          {
+            "label": "Gift Cards",
+            "href": "https://stretchlab.securetree.com/"
+          }
+        ]
+      },
+      {
+        "heading": "Find Us",
+        "links": [
+          {
+            "label": "Locations",
+            "href": "https://www.stretchlab.com/location-search"
+          }
+        ]
+      },
+      {
+        "heading": "Opportunity",
+        "links": [
+          {
+            "label": "Franchise",
+            "href": "https://www.stretchlab.com/franchise"
+          },
+          {
+            "label": "Careers",
+            "href": "https://www.stretchlab.com/careers"
+          },
+          {
+            "label": "FTP",
+            "href": "https://www.stretchlab.com/flexologist-training-program"
+          }
+        ]
+      },
+      {
+        "heading": "Member Perks",
+        "links": [
+          {
+            "label": "On Demand",
+            "href": "https://www.xponential.plus/"
+          },
+          {
+            "label": "Loyalty Program",
+            "href": "https://www.stretchlab.com/classpoints"
+          },
+          {
+            "label": "Earn Your Watch",
+            "href": "https://www.stretchlab.com/earn-your-watch-locations"
+          }
+        ]
+      },
+      {
+        "heading": "Support",
+        "links": [
+          {
+            "label": "Contact Us",
+            "href": "https://www.stretchlab.com/contact"
+          }
+        ]
+      }
+    ],
+    "legal": [
+      {
+        "label": "Terms of Use",
+        "href": "https://www.stretchlab.com/terms"
+      },
+      {
+        "label": "Cookie Policy",
+        "href": "https://www.stretchlab.com/cookie-policy"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "https://www.stretchlab.com/privacy"
+      },
+      {
+        "label": "California Collection Notice",
+        "href": "https://www.stretchlab.com/privacy-policy#california"
+      },
+      {
+        "label": "Consumer Health Data Privacy Policy",
+        "href": "https://www.stretchlab.com/privacy#:~:text=updated%E2%80%9D%20date%2C%20above.-,Consumer%20Health%20Data%20Privacy%20Policy,-Effective%20Date%3A%20May"
+      },
+      {
+        "label": "Your Privacy Choices",
+        "href": "https://www.xponential.com/privacy_choices?data_request_is_for_which_brand_=StretchLab"
+      }
+    ],
+    "social": []
+  },
+  "slug": "sl",
+  "url": "https://www.stretchlab.com/",
+  "captured_at": "2026-05-13T19:18:59.520097Z"
+}

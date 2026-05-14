@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "westlake",
+    "ok": true,
+    "error": null,
+    "has_address": true,
+    "has_phone": true,
+    "has_hours": true,
+    "has_booking": true,
+    "has_maps": true,
+    "intro_offer": "$49",
+    "class_formats": [
+      "One on One",
+      "Group Stretch"
+    ],
+    "staff_count": 4
+  },
+  {
+    "slug": "cherrycreek",
+    "ok": true,
+    "error": null,
+    "has_address": true,
+    "has_phone": true,
+    "has_hours": true,
+    "has_booking": true,
+    "has_maps": true,
+    "intro_offer": "$59",
+    "class_formats": [
+      "One on One",
+      "Group Stretch"
+    ],
+    "staff_count": 4
+  },
+  {
+    "slug": "hillcrest",
+    "ok": true,
+    "error": null,
+    "has_address": true,
+    "has_phone": true,
+    "has_hours": true,
+    "has_booking": true,
+    "has_maps": true,
+    "intro_offer": "$69",
+    "class_formats": [
+      "One on One",
+      "Group Stretch"
+    ],
+    "staff_count": 4
+  },
+  {
+    "slug": "southloop",
+    "ok": true,
+    "error": null,
+    "has_address": true,
+    "has_phone": true,
+    "has_hours": true,
+    "has_booking": true,
+    "has_maps": true,
+    "intro_offer": "$69",
+    "class_formats": [
+      "One on One",
+      "Group Stretch"
+    ],
+    "staff_count": 4
+  },
+  {
+    "slug": "buckhead",
+    "ok": true,
+    "error": null,
+    "has_address": true,
+    "has_phone": true,
+    "has_hours": true,
+    "has_booking": true,
+    "has_maps": true,
+    "intro_offer": "$49",
+    "class_formats": [
+      "One on One",
+      "Group Stretch"
+    ],
+    "staff_count": 4
+  }
+]
