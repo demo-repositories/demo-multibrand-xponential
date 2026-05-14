@@ -71,22 +71,11 @@ export const redirect = defineType({
           if (source === destination) {
             return "Source and destination cannot be the same URL";
           }
-          // #region agent log
-          fetch("http://127.0.0.1:7816/ingest/acba08cd-eacf-4f6f-a1c7-140b8b6fa731", { method: "POST", headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "fe3b26" }, body: JSON.stringify({ sessionId: "fe3b26", runId: "initial", hypothesisId: "A,C", location: "apps/studio/schemaTypes/documents/redirect.ts:77", message: "Redirect source validator before client", data: { apiVersion: API_VERSION, apiVersionLength: API_VERSION.length, source, destination, documentId: document?._id }, timestamp: Date.now() }) }).catch(() => {});
-          // #endregion
-          let existingRedirect: boolean;
-          try {
-            const client = getClient({ apiVersion: API_VERSION });
-            existingRedirect = await validateRedirectLoop(client, {
-              _id: document?._id ?? "",
-              slug: source,
-            });
-          } catch (error) {
-            // #region agent log
-            fetch("http://127.0.0.1:7816/ingest/acba08cd-eacf-4f6f-a1c7-140b8b6fa731", { method: "POST", headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "fe3b26" }, body: JSON.stringify({ sessionId: "fe3b26", runId: "initial", hypothesisId: "A,C", location: "apps/studio/schemaTypes/documents/redirect.ts:88", message: "Redirect source validator threw", data: { apiVersion: API_VERSION, source, errorName: error instanceof Error ? error.name : "non-error", errorMessage: error instanceof Error ? error.message : String(error) }, timestamp: Date.now() }) }).catch(() => {});
-            // #endregion
-            throw error;
-          }
+          const client = getClient({ apiVersion: API_VERSION });
+          const existingRedirect = await validateRedirectLoop(client, {
+            _id: document?._id ?? "",
+            slug: source,
+          });
           if (existingRedirect) {
             return "This would create a redirect loop - a redirect already exists from the source";
           }
@@ -115,22 +104,11 @@ export const redirect = defineType({
           if (destination === source) {
             return "Source and destination cannot be the same URL";
           }
-          // #region agent log
-          fetch("http://127.0.0.1:7816/ingest/acba08cd-eacf-4f6f-a1c7-140b8b6fa731", { method: "POST", headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "fe3b26" }, body: JSON.stringify({ sessionId: "fe3b26", runId: "initial", hypothesisId: "A,C", location: "apps/studio/schemaTypes/documents/redirect.ts:121", message: "Redirect destination validator before client", data: { apiVersion: API_VERSION, apiVersionLength: API_VERSION.length, source, destination, documentId: document?._id }, timestamp: Date.now() }) }).catch(() => {});
-          // #endregion
-          let existingRedirect: boolean;
-          try {
-            const client = getClient({ apiVersion: API_VERSION });
-            existingRedirect = await validateRedirectLoop(client, {
-              _id: document?._id ?? "",
-              slug: destination,
-            });
-          } catch (error) {
-            // #region agent log
-            fetch("http://127.0.0.1:7816/ingest/acba08cd-eacf-4f6f-a1c7-140b8b6fa731", { method: "POST", headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "fe3b26" }, body: JSON.stringify({ sessionId: "fe3b26", runId: "initial", hypothesisId: "A,C", location: "apps/studio/schemaTypes/documents/redirect.ts:132", message: "Redirect destination validator threw", data: { apiVersion: API_VERSION, destination, errorName: error instanceof Error ? error.name : "non-error", errorMessage: error instanceof Error ? error.message : String(error) }, timestamp: Date.now() }) }).catch(() => {});
-            // #endregion
-            throw error;
-          }
+          const client = getClient({ apiVersion: API_VERSION });
+          const existingRedirect = await validateRedirectLoop(client, {
+            _id: document?._id ?? "",
+            slug: destination,
+          });
           if (existingRedirect) {
             return "This would create a redirect loop - a redirect already exists from the destination";
           }

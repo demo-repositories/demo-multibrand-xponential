@@ -41,9 +41,6 @@ export const customUrl = defineType({
       validation: (Rule) => [
         Rule.custom((value, { parent }) => {
           const type = (parent as { type?: string })?.type;
-          // #region agent log
-          fetch("http://127.0.0.1:7816/ingest/acba08cd-eacf-4f6f-a1c7-140b8b6fa731", { method: "POST", headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "fe3b26" }, body: JSON.stringify({ sessionId: "fe3b26", runId: "initial", hypothesisId: "D", location: "apps/studio/schemaTypes/definitions/custom-url.ts:46", message: "Custom URL external validator entry", data: { type, hasValue: Boolean(value), valueKind: value?.startsWith("/") ? "relative" : value?.startsWith("#") ? "hash" : value?.startsWith("?") ? "query" : value ? "absolute-or-invalid" : "empty" }, timestamp: Date.now() }) }).catch(() => {});
-          // #endregion
           if (type === "external") {
             if (!value) {
               return "URL can't be empty";
