@@ -1,5 +1,16 @@
 import { defineQuery } from "next-sanity";
 
+import {
+  appDownloadBlock,
+  brandGridBlock,
+  classGridBlock,
+  locationFinderBlock,
+  personGridBlock,
+  pressListBlock,
+  serviceGridBlock,
+  statsBlockBlock,
+} from "./queries-extended";
+
 const imageFields = /* groq */ `
   "id": asset._ref,
   "preview": asset->metadata.lqip,
@@ -199,7 +210,15 @@ const pageBuilderFragment = /* groq */ `
     ${featureCardsIconBlock},
     ${subscribeNewsletterBlock},
     ${imageLinkCardsBlock},
-    ${richTextBlockFragment}
+    ${richTextBlockFragment},
+    ${brandGridBlock},
+    ${classGridBlock},
+    ${serviceGridBlock},
+    ${personGridBlock},
+    ${statsBlockBlock},
+    ${pressListBlock},
+    ${locationFinderBlock},
+    ${appDownloadBlock}
   }
 `;
 

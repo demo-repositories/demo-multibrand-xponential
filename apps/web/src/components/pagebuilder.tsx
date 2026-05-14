@@ -6,12 +6,20 @@ import { createDataAttribute } from "next-sanity";
 import { useCallback, useMemo } from "react";
 
 import type { PageBuilderBlock, PageBuilderBlockTypes } from "@/types";
+import { AppDownload } from "./sections/app-download";
+import { BrandGrid } from "./sections/brand-grid";
+import { ClassGrid } from "./sections/class-grid";
 import { CTABlock } from "./sections/cta";
 import { FaqAccordion } from "./sections/faq-accordion";
 import { FeatureCardsWithIcon } from "./sections/feature-cards-with-icon";
 import { HeroBlock } from "./sections/hero";
 import { ImageLinkCards } from "./sections/image-link-cards";
+import { LocationFinder } from "./sections/location-finder";
+import { PersonGrid } from "./sections/person-grid";
+import { PressList } from "./sections/press-list";
 import { RichTextBlock } from "./sections/rich-text-block";
+import { ServiceGrid } from "./sections/service-grid";
+import { StatsBlock } from "./sections/stats-block";
 import { SubscribeNewsletter } from "./sections/subscribe-newsletter";
 
 export type PageBuilderProps = {
@@ -35,8 +43,16 @@ const BLOCK_COMPONENTS = {
   subscribeNewsletter: SubscribeNewsletter,
   imageLinkCards: ImageLinkCards,
   richTextBlock: RichTextBlock,
+  brandGrid: BrandGrid,
+  classGrid: ClassGrid,
+  serviceGrid: ServiceGrid,
+  personGrid: PersonGrid,
+  statsBlock: StatsBlock,
+  pressList: PressList,
+  locationFinder: LocationFinder,
+  appDownload: AppDownload,
   // biome-ignore lint/suspicious/noExplicitAny: <any is used to allow for dynamic component rendering>
-} as const satisfies Record<PageBuilderBlockTypes, React.ComponentType<any>>;
+} as const satisfies Partial<Record<PageBuilderBlockTypes, React.ComponentType<any>>>;
 
 /**
  * Helper function to create consistent Sanity data attributes

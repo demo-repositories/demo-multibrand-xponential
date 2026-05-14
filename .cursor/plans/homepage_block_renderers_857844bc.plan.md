@@ -4,7 +4,7 @@ overview: Wire up the 8 page-builder blocks authored across the three home pages
 todos:
   - id: groq-merge
     content: Merge 8 block selectors from queries-extended.ts into pageBuilderFragment in query.ts
-    status: pending
+    status: in_progress
   - id: type-regen
     content: Run pnpm type to regenerate sanity.types.ts
     status: pending

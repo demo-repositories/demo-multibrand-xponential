@@ -188,7 +188,7 @@ export const pressListBlock = /* groq */ `
       *[
         _type == "pressItem"
         && $siteSlug in featuredOn[]->slug.current
-      ] | order(publishedAt desc) [0...coalesce(^.showCount, 3)] { ${pressItemRefFragment} }
+      ] | order(publishedAt desc) [0...12] { ${pressItemRefFragment} }
     )
   }
 `;
