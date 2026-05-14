@@ -84,9 +84,26 @@ Studio runs on http://localhost:3333. Workspace deep links: `/xponential`, `/pur
 
 ### Deploy Studio
 
+From the repository root:
+
 ```bash
-pnpm --filter studio deploy
+set -a
+source apps/studio/.env.local
+set +a
+pnpm deploy:studio
 ```
+
+Or, if you are already in `apps/studio`:
+
+```bash
+set -a
+source .env.local
+set +a
+pnpm exec sanity deploy
+```
+
+Use `pnpm deploy:studio` instead of `pnpm deploy`. `pnpm deploy` is a
+pnpm workspace deployment command, not the Sanity Studio deployment script.
 
 ## Seed import
 

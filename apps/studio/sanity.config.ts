@@ -81,8 +81,8 @@ const sharedPlugins = (siteSlug: string) => [
   assist(),
 ];
 
-export default workspaces.map((w) =>
-  defineConfig({
+export default defineConfig(
+  workspaces.map((w) => ({
     name: w.name,
     title: `${baseTitle} — ${w.title}`,
     basePath: w.basePath,
@@ -132,5 +132,5 @@ export default workspaces.map((w) =>
         },
       ],
     },
-  })
+  }))
 );
