@@ -39,3 +39,6 @@ seed-output.ndjson
 studios-output.ndjson
 press-output.ndjson
 tsx-0/
+
+# Migration script working dir
+scripts/_images/
