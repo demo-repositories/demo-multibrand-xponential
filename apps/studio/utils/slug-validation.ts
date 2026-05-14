@@ -235,6 +235,9 @@ export function createSlugErrorValidator(
 ): (slug: { current?: string } | undefined) => string | true {
   return (slug) => {
     const { errors } = validateSlug(slug?.current, options);
+    // #region agent log
+    fetch("http://127.0.0.1:7816/ingest/acba08cd-eacf-4f6f-a1c7-140b8b6fa731", { method: "POST", headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "fe3b26" }, body: JSON.stringify({ sessionId: "fe3b26", runId: "initial", hypothesisId: "E", location: "apps/studio/utils/slug-validation.ts:240", message: "Slug error validator result", data: { documentType: options.sanityDocumentType, slug: slug?.current, errorCount: errors.length, errors }, timestamp: Date.now() }) }).catch(() => {});
+    // #endregion
     return errors.length > 0 ? errors.join("; ") : true;
   };
 }
@@ -245,6 +248,9 @@ export function createSlugWarningValidator(
 ): (slug: { current?: string } | undefined) => string | true {
   return (slug) => {
     const { warnings } = validateSlug(slug?.current, options);
+    // #region agent log
+    fetch("http://127.0.0.1:7816/ingest/acba08cd-eacf-4f6f-a1c7-140b8b6fa731", { method: "POST", headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "fe3b26" }, body: JSON.stringify({ sessionId: "fe3b26", runId: "initial", hypothesisId: "E", location: "apps/studio/utils/slug-validation.ts:254", message: "Slug warning validator result", data: { documentType: options.sanityDocumentType, slug: slug?.current, warningCount: warnings.length, warnings }, timestamp: Date.now() }) }).catch(() => {});
+    // #endregion
     return warnings.length > 0 ? warnings.join("; ") : true;
   };
 }

@@ -35,18 +35,28 @@ async function isSlugUniqueForType(
   context: SlugValidationContext,
   documentType: string
 ): Promise<boolean> {
+  // #region agent log
+  fetch("http://127.0.0.1:7816/ingest/acba08cd-eacf-4f6f-a1c7-140b8b6fa731", { method: "POST", headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "fe3b26" }, body: JSON.stringify({ sessionId: "fe3b26", runId: "initial", hypothesisId: "A,B", location: "apps/studio/schemaTypes/common.ts:41", message: "Slug uniqueness validation entry", data: { documentType, slug, apiVersion: API_VERSION, apiVersionLength: API_VERSION.length, isPerSiteSingleton: PER_SITE_SINGLETON_TYPES.has(documentType), hasGetClient: typeof context.getClient === "function", documentId: context.document?._id }, timestamp: Date.now() }) }).catch(() => {});
+  // #endregion
   if (PER_SITE_SINGLETON_TYPES.has(documentType)) {
     return true;
   }
   const { document, getClient } = context;
-  const client = getClient({ apiVersion: API_VERSION });
-  const id = getPublishedId(document?._id ?? "");
-  const draftId = getDraftId(id);
-  const conflict = await client.fetch<string | null>(
-    "*[!(_id in [$draft, $published]) && _type == $type && slug.current == $slug][0]._id",
-    { draft: draftId, published: id, type: documentType, slug }
-  );
-  return !conflict;
+  try {
+    const client = getClient({ apiVersion: API_VERSION });
+    const id = getPublishedId(document?._id ?? "");
+    const draftId = getDraftId(id);
+    const conflict = await client.fetch<string | null>(
+      "*[!(_id in [$draft, $published]) && _type == $type && slug.current == $slug][0]._id",
+      { draft: draftId, published: id, type: documentType, slug }
+    );
+    return !conflict;
+  } catch (error) {
+    // #region agent log
+    fetch("http://127.0.0.1:7816/ingest/acba08cd-eacf-4f6f-a1c7-140b8b6fa731", { method: "POST", headers: { "Content-Type": "application/json", "X-Debug-Session-Id": "fe3b26" }, body: JSON.stringify({ sessionId: "fe3b26", runId: "initial", hypothesisId: "A,B", location: "apps/studio/schemaTypes/common.ts:57", message: "Slug uniqueness validation threw", data: { documentType, slug, apiVersion: API_VERSION, errorName: error instanceof Error ? error.name : "non-error", errorMessage: error instanceof Error ? error.message : String(error) }, timestamp: Date.now() }) }).catch(() => {});
+    // #endregion
+    throw error;
+  }
 }
 
 export const richTextField = defineField({
