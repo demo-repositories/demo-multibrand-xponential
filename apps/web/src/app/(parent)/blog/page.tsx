@@ -10,6 +10,7 @@ import { BlogHeader } from "@/components/blog-card";
 import { BlogPageContent } from "@/components/blog-page-content";
 import { PageBuilder } from "@/components/pagebuilder";
 import { getSEOMetadata } from "@/lib/seo";
+import { PARENT_SITE_SLUG } from "@/lib/site";
 import {
   calculatePaginationMetadata,
   getBlogPaginationStartEnd,
@@ -17,7 +18,10 @@ import {
 } from "@/utils";
 
 async function fetchBlogIndexPageData() {
-  const res = await sanityFetch({ query: queryBlogIndexPageData });
+  const res = await sanityFetch({
+    query: queryBlogIndexPageData,
+    params: { siteSlug: PARENT_SITE_SLUG },
+  });
   return res.data;
 }
 
@@ -39,6 +43,7 @@ async function fetchBlogIndexPageBlogsCount() {
 export async function generateMetadata() {
   const { data: result } = await sanityFetch({
     query: queryBlogIndexPageData,
+    params: { siteSlug: PARENT_SITE_SLUG },
   });
   return getSEOMetadata({
     title: result?.title ?? result?.seoTitle,

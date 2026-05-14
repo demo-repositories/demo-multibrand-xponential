@@ -4,10 +4,12 @@ import {
   queryNavbarData,
 } from "@workspace/sanity/query";
 
-export const getNavigationData = async () => {
+import type { SiteSlug } from "@/lib/site";
+
+export const getNavigationData = async (siteSlug: SiteSlug) => {
   const [navbarData, settingsData] = await Promise.all([
-    sanityFetch({ query: queryNavbarData }),
-    sanityFetch({ query: queryGlobalSeoSettings }),
+    sanityFetch({ query: queryNavbarData, params: { siteSlug } }),
+    sanityFetch({ query: queryGlobalSeoSettings, params: { siteSlug } }),
   ]);
 
   return { navbarData: navbarData.data, settingsData: settingsData.data };

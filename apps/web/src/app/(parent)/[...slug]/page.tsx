@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 
 import { PageBuilder } from "@/components/pagebuilder";
 import { getSEOMetadata } from "@/lib/seo";
+import { SUB_BRAND_SITE_SLUGS } from "@/lib/site";
 
 const logger = new Logger("PageSlug");
 
@@ -20,7 +21,6 @@ async function fetchSlugPagePaths() {
   try {
     const slugs = await client.fetch(querySlugPagePaths);
 
-    // If no slugs found, return empty array to prevent build errors
     if (!Array.isArray(slugs) || slugs.length === 0) {
       return [];
     }
@@ -31,12 +31,16 @@ async function fetchSlugPagePaths() {
         continue;
       }
       const parts = slug.split("/").filter(Boolean);
+      // Skip slugs that would collide with sub-brand site routes —
+      // those are served by `app/[siteSlug]/...` (e.g. /purebarre).
+      if (parts.length > 0 && SUB_BRAND_SITE_SLUGS.includes(parts[0] as never)) {
+        continue;
+      }
       paths.push({ slug: parts });
     }
     return paths;
   } catch (error) {
     logger.error("Error fetching slug paths", error);
-    // Return empty array to allow build to continue
     return [];
   }
 }
@@ -64,7 +68,6 @@ export async function generateStaticParams() {
   return paths;
 }
 
-// Allow dynamic params for paths not generated at build time
 export const dynamicParams = true;
 
 export default async function SlugPage({

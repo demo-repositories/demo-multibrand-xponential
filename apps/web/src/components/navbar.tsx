@@ -6,12 +6,17 @@ import Link from "next/link";
 import { useState } from "react";
 import useSWR from "swr";
 
+import type { SiteSlug } from "@/lib/site";
 import type { ColumnLink, NavColumn, NavigationData } from "@/types";
 import { MenuLink } from "./elements/menu-link";
 import { SanityButtons } from "./elements/sanity-buttons";
 import { Logo } from "./logo";
 import { MobileMenu } from "./mobile-menu";
 import { ModeToggle } from "./mode-toggle";
+
+type NavbarProps = NavigationData & {
+  siteSlug: SiteSlug;
+};
 
 // Fetcher function
 const fetcher = async (url: string): Promise<NavigationData> => {
@@ -131,9 +136,10 @@ function NavbarSkeleton() {
 export function Navbar({
   navbarData: initialNavbarData,
   settingsData: initialSettingsData,
-}: NavigationData) {
+  siteSlug,
+}: NavbarProps) {
   const { data, error, isLoading } = useSWR<NavigationData>(
-    "/api/navigation",
+    `/api/navigation?siteSlug=${siteSlug}`,
     fetcher,
     {
       fallbackData: {

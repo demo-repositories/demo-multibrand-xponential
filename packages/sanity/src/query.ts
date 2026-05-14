@@ -215,7 +215,7 @@ export const queryImageType = defineQuery(`
 `);
 
 export const queryHomePageData =
-  defineQuery(`*[_type == "homePage" && _id == "homePage"][0]{
+  defineQuery(`*[_type == "homePage" && _id == "homePage-" + $siteSlug][0]{
     ...,
     _id,
     _type,
@@ -238,7 +238,7 @@ export const querySlugPagePaths = defineQuery(`
 `);
 
 export const queryBlogIndexPageData = defineQuery(`
-  *[_type == "blogIndex"][0]{
+  *[_type == "blogIndex" && _id == "blogIndex-" + $siteSlug][0]{
     ...,
     _id,
     _type,
@@ -326,7 +326,7 @@ export const queryGenericPageOGData = defineQuery(`
 `);
 
 export const queryFooterData = defineQuery(`
-  *[_type == "footer" && _id == "footer"][0]{
+  *[_type == "footer" && _id == "footer-" + $siteSlug][0]{
     _id,
     subtitle,
     columns[]{
@@ -347,7 +347,7 @@ export const queryFooterData = defineQuery(`
 `);
 
 export const queryNavbarData = defineQuery(`
-  *[_type == "navbar" && _id == "navbar"][0]{
+  *[_type == "navbar" && _id == "navbar-" + $siteSlug][0]{
     _id,
     columns[]{
       _key,
@@ -394,7 +394,7 @@ export const querySitemapData = defineQuery(`{
   }
 }`);
 export const queryGlobalSeoSettings = defineQuery(`
-  *[_type == "settings"][0]{
+  *[_type == "settings" && _id == "settings-" + $siteSlug][0]{
     _id,
     _type,
     siteTitle,
@@ -413,7 +413,7 @@ export const queryGlobalSeoSettings = defineQuery(`
 `);
 
 export const querySettingsData = defineQuery(`
-  *[_type == "settings"][0]{
+  *[_type == "settings" && _id == "settings-" + $siteSlug][0]{
     _id,
     _type,
     siteTitle,

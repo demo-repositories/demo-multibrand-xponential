@@ -9,6 +9,7 @@ import type {
 } from "@workspace/sanity/types";
 import Link from "next/link";
 
+import type { SiteSlug } from "@/lib/site";
 import { Logo } from "./logo";
 import {
   FacebookIcon,
@@ -27,13 +28,15 @@ type FooterProps = {
   settingsData: NonNullable<QueryGlobalSeoSettingsResult>;
 };
 
-export async function FooterServer() {
+export async function FooterServer({ siteSlug }: { siteSlug: SiteSlug }) {
   const [response, settingsResponse] = await Promise.all([
     sanityFetch({
       query: queryFooterData,
+      params: { siteSlug },
     }),
     sanityFetch({
       query: queryGlobalSeoSettings,
+      params: { siteSlug },
     }),
   ]);
 

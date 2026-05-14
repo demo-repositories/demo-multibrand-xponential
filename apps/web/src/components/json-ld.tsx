@@ -19,6 +19,7 @@ import type {
   WithContext,
 } from "schema-dts";
 
+import type { SiteSlug } from "@/lib/site";
 import { getBaseUrl, handleErrors } from "@/utils";
 
 type RichTextChild = {
@@ -271,8 +272,11 @@ type CombinedJsonLdProps = {
 export async function CombinedJsonLd({
   includeWebsite = false,
   includeOrganization = false,
-}: CombinedJsonLdProps) {
-  const [res] = await handleErrors(client.fetch(querySettingsData));
+  siteSlug,
+}: CombinedJsonLdProps & { siteSlug: SiteSlug }) {
+  const [res] = await handleErrors(
+    client.fetch(querySettingsData, { siteSlug })
+  );
 
   const cleanSettings = stegaClean(res);
   return (

@@ -3,10 +3,12 @@ import { queryHomePageData } from "@workspace/sanity/query";
 
 import { PageBuilder } from "@/components/pagebuilder";
 import { getSEOMetadata } from "@/lib/seo";
+import { PARENT_SITE_SLUG } from "@/lib/site";
 
 async function fetchHomePageData() {
   return await sanityFetch({
     query: queryHomePageData,
+    params: { siteSlug: PARENT_SITE_SLUG },
   });
 }
 
