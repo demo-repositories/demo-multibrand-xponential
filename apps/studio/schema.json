@@ -4895,6 +4895,14 @@
           "type": "string"
         }
       },
+      "site": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "site.reference"
+        },
+        "optional": false
+      },
       "label": {
         "type": "objectAttribute",
         "value": {
@@ -5139,6 +5147,14 @@
           "type": "string"
         }
       },
+      "site": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "site.reference"
+        },
+        "optional": false
+      },
       "title": {
         "type": "objectAttribute",
         "value": {
@@ -5279,6 +5295,14 @@
         "value": {
           "type": "string"
         }
+      },
+      "site": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "site.reference"
+        },
+        "optional": false
       },
       "title": {
         "type": "objectAttribute",

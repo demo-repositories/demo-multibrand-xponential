@@ -781,6 +781,7 @@ export type Settings = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
+  site: SiteReference;
   label: string;
   siteTitle: string;
   siteDescription: string;
@@ -823,6 +824,7 @@ export type BlogIndex = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
+  site: SiteReference;
   title?: string;
   description?: string;
   slug?: Slug;
@@ -842,6 +844,7 @@ export type HomePage = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
+  site: SiteReference;
   title?: string;
   description?: string;
   slug?: Slug;
@@ -1609,6 +1612,7 @@ export type QueryHomePageDataResult = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
+  site: SiteReference;
   title: string | null;
   description: string | null;
   slug: string | null;
@@ -2781,6 +2785,7 @@ export type QueryBlogIndexPageDataResult = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
+  site: SiteReference;
   title: string | null;
   description: string | null;
   slug: string | null;

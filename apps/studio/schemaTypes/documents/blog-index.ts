@@ -14,6 +14,16 @@ export const blogIndex = defineType({
   groups: GROUPS,
   fields: [
     defineField({
+      name: "site",
+      type: "reference",
+      title: "Site",
+      to: [{ type: "site" }],
+      description:
+        "Which site this blog index belongs to. Set automatically when this singleton was created from the workspace's Structure.",
+      group: GROUP.MAIN_CONTENT,
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: "title",
       type: "string",
       description:
@@ -73,12 +83,15 @@ export const blogIndex = defineType({
   preview: {
     select: {
       title: "title",
+      siteName: "site.name",
       description: "description",
       slug: "slug.current",
     },
-    prepare: ({ title, description, slug }) => ({
+    prepare: ({ title, siteName, description, slug }) => ({
       title: title || "Untitled Blog Index",
-      subtitle: description || slug || "Blog Index",
+      subtitle:
+        [siteName, slug || description].filter(Boolean).join(" — ") ||
+        "Blog Index",
     }),
   },
 });

@@ -1,17 +1,53 @@
 import {
   defineField,
+  getDraftId,
+  getPublishedId,
   type ImageRule,
   type ImageValue,
+  type SlugValidationContext,
   type ValidationBuilder,
 } from "sanity";
 
 import { PathnameFieldComponent } from "@/components/slug-field-component";
-import { GROUP } from "@/utils/constant";
+import { API_VERSION, GROUP } from "@/utils/constant";
 import {
   createSlugErrorValidator,
   createSlugWarningValidator,
   getDocumentTypeConfig,
 } from "@/utils/slug-validation";
+
+/**
+ * Document types that exist as one-per-site singletons identified by the
+ * `${type}-${siteSlug}` ID convention. Each site is allowed to share the
+ * same slug (e.g. every home page is "/"), so the slug uniqueness check
+ * is a no-op for these — `_id` uniqueness already prevents real collisions.
+ */
+const PER_SITE_SINGLETON_TYPES = new Set([
+  "homePage",
+  "blogIndex",
+  "navbar",
+  "footer",
+  "settings",
+]);
+
+async function isSlugUniqueForType(
+  slug: string,
+  context: SlugValidationContext,
+  documentType: string
+): Promise<boolean> {
+  if (PER_SITE_SINGLETON_TYPES.has(documentType)) {
+    return true;
+  }
+  const { document, getClient } = context;
+  const client = getClient({ apiVersion: API_VERSION });
+  const id = getPublishedId(document?._id ?? "");
+  const draftId = getDraftId(id);
+  const conflict = await client.fetch<string | null>(
+    "*[!(_id in [$draft, $published]) && _type == $type && slug.current == $slug][0]._id",
+    { draft: draftId, published: id, type: documentType, slug }
+  );
+  return !conflict;
+}
 
 export const richTextField = defineField({
   name: "richText",
@@ -66,6 +102,10 @@ export const documentSlugField = (
     group,
     components: {
       field: PathnameFieldComponent,
+    },
+    options: {
+      isUnique: (slug, context) =>
+        isSlugUniqueForType(slug, context, documentType),
     },
     validation: (Rule) => {
       const config = getDocumentTypeConfig(documentType);

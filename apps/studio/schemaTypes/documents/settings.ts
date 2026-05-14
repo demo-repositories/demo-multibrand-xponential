@@ -48,6 +48,15 @@ export const settings = defineType({
   icon: CogIcon,
   fields: [
     defineField({
+      name: "site",
+      type: "reference",
+      title: "Site",
+      to: [{ type: "site" }],
+      description:
+        "Which site these settings belong to. Set automatically when this singleton was created from the workspace's Structure.",
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: "label",
       type: "string",
       initialValue: "Settings",
@@ -91,9 +100,11 @@ export const settings = defineType({
   preview: {
     select: {
       title: "label",
+      siteName: "site.name",
     },
-    prepare: ({ title }) => ({
+    prepare: ({ title, siteName }) => ({
       title: title || "Untitled Settings",
+      subtitle: siteName,
       media: CogIcon,
     }),
   },

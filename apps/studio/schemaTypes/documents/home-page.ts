@@ -16,6 +16,16 @@ export const homePage = defineType({
   groups: GROUPS,
   fields: [
     defineField({
+      name: "site",
+      type: "reference",
+      title: "Site",
+      to: [{ type: "site" }],
+      description:
+        "Which site this home page belongs to. Set automatically when this singleton was created from the workspace's Structure.",
+      group: GROUP.MAIN_CONTENT,
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: "title",
       type: "string",
       description:
@@ -55,12 +65,14 @@ export const homePage = defineType({
   preview: {
     select: {
       title: "title",
+      siteName: "site.name",
       slug: "slug.current",
     },
-    prepare: ({ title, slug }) => ({
+    prepare: ({ title, siteName, slug }) => ({
       title: title || "Untitled Home Page",
       media: HomeIcon,
-      subtitle: slug || "Home Page",
+      subtitle:
+        [siteName, slug].filter(Boolean).join(" — ") || "Home Page",
     }),
   },
 });
